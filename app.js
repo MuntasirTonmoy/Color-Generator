@@ -1,8 +1,8 @@
 const body = document.getElementById("hero");
-console.log("hello");
+const colorCode = document.querySelector(".color-code");
 
 const generateColor = () => {
-  console.log("click");
   const randomColor = Math.ceil(Math.random() * 900000);
   body.style.background = `#${randomColor}`;
+  colorCode.innerText = `code: #${randomColor}`;
 };
